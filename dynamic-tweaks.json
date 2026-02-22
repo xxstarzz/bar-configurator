@@ -160,20 +160,25 @@
       ],
       "column": "right"
     },
-    "UNIT_LAUNCHERS": {
-  "display": "Unit Launchers",
-  "description": "Buildings that launch units (Meatball, Assimilator, etc.)",
-  "slot_type": "tweakdefs",
-  "source_file": "tweaks/Defs_Unit_Launchers.lua",
-  "dependencies": ["MAIN_DEFS"],
-  "options": [
-    {
-      "id": "enable_all",
-      "label": "Enable Unit Launchers",
-      "markers": {
-        "start": "-- UNIT_LAUNCHERS_START",
-        "end": "-- UNIT_LAUNCHERS_END"
-      },
+  "UNIT_LAUNCHERS": {
+      "display": "Unit Launchers",
+      "description": "Buildings that launch units (Meatball, Assimilator, etc.)",
+      "slot_type": "tweakdefs",
+      "source_file": "tweaks/Defs_Unit_Launchers.lua",
+      "dependencies": ["MAIN_DEFS"],
+      "options": [
+        {
+          "id": "enable_all",
+          "label": "Enable Unit Launchers",
+          "markers": {
+            "start": "-- UNIT_LAUNCHERS_START",
+            "end": "-- UNIT_LAUNCHERS_END"
+          },
+          "default": true
+        }
+      ],
+      "column": "left"
+    },
       "default": true,
       "type": "toggle"
     },
