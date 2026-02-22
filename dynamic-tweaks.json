@@ -161,24 +161,43 @@
       "column": "right"
     },
     "UNIT_LAUNCHERS": {
-      "display": "Unit Launchers",
-      "description": "Buildings that launch units (Meatball, Assimilator, etc.)",
-      "slot_type": "tweakdefs",
-      "source_file": "tweaks/Defs_Unit_Launchers.lua",
-      "dependencies": ["MAIN_DEFS"],
-      "options": [
+  "display": "Unit Launchers",
+  "description": "Buildings that launch units (Meatball, Assimilator, etc.)",
+  "slot_type": "tweakdefs",
+  "source_file": "tweaks/Defs_Unit_Launchers.lua",
+  "dependencies": ["MAIN_DEFS"],
+  "options": [
+    {
+      "id": "enable_all",
+      "label": "Enable Unit Launchers",
+      "markers": {
+        "start": "-- UNIT_LAUNCHERS_START",
+        "end": "-- UNIT_LAUNCHERS_END"
+      },
+      "default": true
+    },
+    {
+      "id": "launcher_mode",
+      "label": "Launcher Mode",
+      "description": "Choose between balanced or experimental launcher settings",
+      "type": "select",
+      "choices": [
         {
-          "id": "enable_all",
-          "label": "Enable Unit Launchers",
-          "markers": {
-            "start": "-- UNIT_LAUNCHERS_START",
-            "end": "-- UNIT_LAUNCHERS_END"
-          },
-          "default": true
+          "value": "limited",
+          "label": "Limited",
+          "description": "Was made to balance the game"
+        },
+        {
+          "value": "unlimited",
+          "label": "Unlimited",
+          "description": "May crash the game but fun to use"
         }
       ],
-      "column": "left"
-    },
+      "default": "limited"
+    }
+  ],
+  "column": "left"
+}
     "LRPC_v2": {
       "display": "LRPC Rebalance v2",
       "description": "Rebalanced long-range plasma cannons (Bertha, Intimidator, Legion LRPC)",
