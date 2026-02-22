@@ -174,7 +174,8 @@
         "start": "-- UNIT_LAUNCHERS_START",
         "end": "-- UNIT_LAUNCHERS_END"
       },
-      "default": true
+      "default": true,
+      "type": "toggle"
     },
     {
       "id": "launcher_mode",
@@ -183,12 +184,12 @@
       "type": "select",
       "choices": [
         {
-          "value": "limited",
+          "id": "limited",
           "label": "Limited",
           "description": "Was made to balance the game"
         },
         {
-          "value": "unlimited",
+          "id": "unlimited",
           "label": "Unlimited",
           "description": "May crash the game but fun to use"
         }
@@ -197,6 +198,7 @@
     }
   ],
   "column": "left"
+}
 }
     "LRPC_v2": {
       "display": "LRPC Rebalance v2",
