@@ -160,7 +160,7 @@
       ],
       "column": "right"
     },
-  "UNIT_LAUNCHERS": {
+      "UNIT_LAUNCHERS": {
       "display": "Unit Launchers",
       "description": "Buildings that launch units (Meatball, Assimilator, etc.)",
       "slot_type": "tweakdefs",
@@ -179,32 +179,6 @@
       ],
       "column": "left"
     },
-      "default": true,
-      "type": "toggle"
-    },
-    {
-      "id": "launcher_mode",
-      "label": "Launcher Mode",
-      "description": "Choose between balanced or experimental launcher settings",
-      "type": "select",
-      "choices": [
-        {
-          "id": "limited",
-          "label": "Limited",
-          "description": "Was made to balance the game"
-        },
-        {
-          "id": "unlimited",
-          "label": "Unlimited",
-          "description": "May crash the game but fun to use"
-        }
-      ],
-      "default": "limited"
-    }
-  ],
-  "column": "left"
-}
-}
     "LRPC_v2": {
       "display": "LRPC Rebalance v2",
       "description": "Rebalanced long-range plasma cannons (Bertha, Intimidator, Legion LRPC)",
